@@ -1,0 +1,44 @@
+1
+
+/index.txt
+Content-Type: text/plain
+Content-Length: 14
+Server: nginx/1.2.2
+
+/images/info.png
+Content-Type: image/png
+Content-Length: 200227
+Server: nginx/1.2.2
+
+/media/Water.mp4
+Content-Type: application/octet-stream
+Content-Length: 1137202
+Server: nginx/1.2.2
+
+2
+
+a. http://localhost/lw1/mysql_is_a_database_server.html
+Код ошибки: 404 Not Found
+Означает: ресурс не найден.
+Решение: создать файл и разместить его на сервере.
+
+b. http://localhost/lw1/nginx_is_fast_http_server.txt
+Код: 200 OK
+Означает: запрос выполнен.
+Нужен для описания специального поведения сервера.
+
+с. http://localhost/lw1/php_is_a_server_scripting_language.php
+Код: 302 Found
+Означает: ресурс временно отсутствует, возможно, был перемещён.
+Нужен для описания специального поведения сервера.
+
+d. http://localhost/lw1/javascript_is_a_client_side_language.php?how_to_work=hardly
+Код ошибки: 400 Work hard!
+Означает: сервер не смог обработать запрос, отправленный клиентом из-за неверного синтаксиса.
+Решение: изменить запрос на http://localhost/lw1/javascript_is_a_client_side_language.php?how_to_work=hard
+
+3
+
+Charset нужен для определения кодировки, используемой на странице.
+Если будет задан неверно, браузер неверно определит кодировку и текст будет нечитаемым, при его отсутсвии по-умолчанию используется символьный набор ISO 8859-1.
+По запросу http://localhost/lw1/all_begin_from_http.html мы видим нечитаемый текст из-за того, что кодировка файла utf-8. Чтобы текст отображался корректно нужно указать параметр charset='utf-8' в теге <meta>.
