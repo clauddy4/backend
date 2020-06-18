@@ -1,0 +1,11 @@
+﻿one один
+two два
+three три
+four четыре
+five пять
+who кто
+where где
+what что
+in в
+under под
+on на
